@@ -1,16 +1,11 @@
 Tok::Application.routes.draw do
+
   #get "welcome/index"
-  match 'about', to: 'welcome#about', via: :get
-  match 'dilsel', to: 'welcome#about/dilsel', via: :get
-  match 'gorsel', to: 'welcome#about/gorsel', via: :get
-  match 'matematiksel', to: 'welcome#about/matematiksel', via: :get
-  match 'bedensel', to: 'welcome#about/bedensel', via: :get
-  match 'muziksel', to: 'welcome#about/muziksel', via: :get
-  match 'sosyal', to: 'welcome#about/sosyal', via: :get
-  match 'icsel', to: 'welcome#about/icsel', via: :get
-  match 'dogasal', to: 'welcome#about/dogasal', via: :get
-  match 'Anasayfa', to: 'welcome#Anasayfa.png', via: :get
+  match 'login', to: 'welcome#login', via: :get
+  match 'kayitol', to: 'welcome#kayitol', via: :get
+  match 'Anasayfa', to: 'welcome#Anasayfa.jpg', via: :get
   root 'welcome#index'
+  resources :kayitol
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

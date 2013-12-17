@@ -1,11 +1,24 @@
+<center>
 <body style="background-color: lightblue">
-<h1>HER ÇOCUK ÖZELDİR...</h1>
+<h1>KURS TAKİP SİSTEMİ</h1>
+<h3>HER ÇOCUK ÖZELDİR...</h3>
 
-<%= image_tag("Anasayfa.png", :alt => "rss feed") %>
 
-<p>Bireyler farklı düşünüş tarzlarına sahiptir ve daha anaokulu eğitiminde bu farklılıklar dikkate alınırsa,
-  çocuklarımıza çok daha parlak bir gelecek sunmuş olacağız.</p>
+<%= image_tag("Anasayfa.jpg", :alt => "rss feed") %>
 
-<%= stylesheet_link_tag "index" %>
-<%= link_to 'Çocuğunuzu Keşfetmek İçin Tıklayınız.', about_path%>
+<p>Okulumuzda verilen kursları en iyi şekilde velilerimize aktarmak ve çocuklarımız için en doğru kurs seçimini
+  sağlamak amacıyla hazırlamış olduğumuz web servisimize
+  HOŞGELDİNİZ..</p>
+
+<p><br>
+<%= stylesheet_link_tag "login" %>
+<%= link_to 'Giriş yapınız', login_path%>
+<br></p>
+
+<p><br>
+<%= stylesheet_link_tag "kayitol" %>
+<%= link_to 'Kayıtlı değil misiniz? Kaydolun', kayitol_path%>
+<br></p>
+
 </body>
+</center>
