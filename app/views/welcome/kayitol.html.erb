@@ -1,0 +1,29 @@
+<center>
+  <body style="background-color: lightblue">
+  <h1>Kayıt Sistemi</h1>
+
+  <%= form_for :kayit_form, url:kayitol_path do |f| %>
+
+      <%= f.label :AdSoyad %><br>
+      <%= f.text_field :ad_soyad  %>
+      <br>
+      <%= f.label :ÇocukAdı %><br>
+      <%= f.text_field :cocuk_adi  %>
+      <br>
+      <%= f.label :Email %><br>
+      <%= f.text_field :email  %>
+      <br>
+      <%= f.label :Şifre %><br>
+      <%= f.text_field :sifre  %>
+      <br>
+      <%= f.label :ŞifreTekrarı %><br>
+      <%= f.text_field :sifre_kontrol  %>
+
+
+      <p>
+        <%= f.submit :Ekle %>
+      </p>
+
+  <% end %>
+  </body>
+</center>
